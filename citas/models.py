@@ -14,10 +14,10 @@ class Critica_sitios(models.Model):
 	calificacion = models.IntegerField(default=0)
 
 	MASCULINO='Axel E González'
-	FEMENINO= 'Bianca E Monrroy'
+	FEMENINO= 'Bianca E Monroy'
 	Type_CHOICES =(
 		(MASCULINO, 'Axel E González'),
-		(FEMENINO, 'Bianca E Monrroy')
+		(FEMENINO, 'Bianca E Monroy')
 		)
 
 	evaluador= models.CharField(choices=Type_CHOICES, default= FEMENINO, max_length=20)
