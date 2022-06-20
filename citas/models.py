@@ -32,4 +32,21 @@ class Critica_sitios(models.Model):
 		return self.opinion
 
 
+class Sitios_visitados(models.Model):
+	a='Bianca todavia no realiza un comentario'
+	b='Axel todavia no realiza un comentario'
 
+	Lugar_que_visite=models.CharField(max_length=50)
+
+	Comentario_Bianca=models.CharField(max_length=400, default=a)
+
+	calificacion_Bianca=models.IntegerField(default=0)
+
+	Comentario_Axel=models.CharField(max_length=400, default=b)
+
+	calificacion_Axel=models.IntegerField(default=0)
+
+	def __str__(self):
+
+		return self.Lugar_que_visite
+		

@@ -4,7 +4,7 @@
 
 <script type="text/javascript">
 
-  window.alert(' ¡Por cierto, mi amor Bianquita felicidades por tú empleo. Yo se que eres la mejor :D! ');
+  window.alert(' ¡Hola sabes que te quiero mucho y estoy arrepentido :(,espero lo hablemos ');
 </script>
     <h3 class="text-center">Agrega un Nuevo lugar</h3>
 
@@ -15,6 +15,12 @@
 	</form>
 
 	
-
+{% if user.is_authenticated %}
+    	<div class="row">
+    		<div class="col-lg-12 col-md-12 col-12 col-xs-12">
+    			<a href="{%url 'logout'%}">cierra tu sesión</a>
+    		</div>
+    	</div> 
+   	{% endif %} 
 
 {% endblock %}
