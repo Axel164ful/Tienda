@@ -81,7 +81,13 @@ class IndexView(generic.ListView):
         
 
 
-        
+
+class ArtView(generic.ListView):
+    template_name='citas/articulos.html'
+    context_object_name='vista_articulos'
+    def get_queryset(self):
+        pass
+                    
 
     
 class BaseView(generic.ListView):

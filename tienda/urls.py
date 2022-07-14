@@ -19,7 +19,7 @@ from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls ),
     path('', include('cyber.urls') ),
-    path('citas/', include('citas.urls') ),
+    path('home/', include('citas.urls') ),
 ]
 # seccion habilita la el mapeo para urls de login y permisos de usuario
 urlpatterns += [
